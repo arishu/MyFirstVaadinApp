@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+	<servlet>
+		<servlet-name>My First Vaadin Application</servlet-name>
+		<servlet-class>com.vaadin.server.VaadinServlet</servlet-class>
+		<!-- 程序的入口点 -->
+		<init-param>
+			<param-name>UI</param-name>
+			<!-- <param-value>chap0.com.aris.learningvaadin.aboutevent.EventUI</param-value> -->
+			<!-- <param-value>chap0.com.aris.learningvaadin.aboutevent.ListenerUI_1</param-value> -->
+			<!-- <param-value>chap0.com.aris.learningvaadin.aboutevent.ListenerUI_2</param-value> -->
+			<!-- <param-value>chap0.com.aris.learningvaadin.aboutdata.PropertyUseUI</param-value> -->
+			<!-- <param-value>chap0.com.aris.learningvaadin.aboutdata.ItemUseUI</param-value> -->
+			<!-- <param-value>chap0.com.aris.learningvaadin.aboutdata.ContainerUseUI</param-value> -->
+			
+			<!-- <param-value>chap1.com.aris.learningvaadin.commonfeatures.LocaleUI</param-value> -->
+			
+			<!-- <param-value>chap1.com.aris.learningvaadin.Field.FieldTestUI</param-value> -->
+			<!-- <param-value>chap1.com.aris.learningvaadin.Field.PropertyUI</param-value> -->
+			<!-- <param-value>chap1.com.aris.learningvaadin.Field.DataBindUI</param-value> -->
+			<!-- <param-value>chap1.com.aris.learningvaadin.Field.TypeConvertUI</param-value> -->
+			<!-- <param-value>chap1.com.aris.learningvaadin.Field.ValueBufferedUI</param-value> -->
+			<!-- <param-value>chap1.com.aris.learningvaadin.Field.FieldValidatorUI</param-value> -->
+			
+			<!-- <param-value>chap1.com.aris.learningvaadin.Select.SelectTestUI</param-value> -->
+			<!-- <param-value>chap1.com.aris.learningvaadin.Select.SelectTest2UI</param-value> -->
+			<!-- <param-value>chap1.com.aris.learningvaadin.Select.ItemCaptionModeUI</param-value> -->
+			<!-- <param-value>chap1.com.aris.learningvaadin.Select.GetAndSetCurrentItemUI</param-value> -->
+			<!-- <param-value>chap1.com.aris.learningvaadin.Select.AddNewItemUI</param-value> -->
+			<!-- <param-value>chap1.com.aris.learningvaadin.Select.MultiSelectUI</param-value> -->
+			<param-value>chap1.com.aris.learningvaadin.Select.AddSelectIconUI</param-value>
+			
+			
+			<!-- <param-value>com.aris.learningvaadin.MyUI</param-value> -->
+			<!-- <param-value>com.aris.learningvaadin.customwindow.CustomWindowUI</param-value> -->
+			
+			<!-- basic use of label -->
+			<!-- <param-value>com.aris.learningvaadin.label.LabelBasicUseUI</param-value> -->
+			<!-- <param-value>com.aris.learningvaadin.label.LabelLineWrapUI</param-value> -->
+			
+			<!-- content mode of label -->
+			<!-- <param-value>com.aris.learningvaadin.label.LabelContentModeUI</param-value> -->
+			<!-- <param-value>com.aris.learningvaadin.label.LabelHTMLModeUI</param-value> -->
+			
+			<!-- <param-value>com.aris.learningvaadin.label.LabelBindToEditorUI</param-value> -->
+			
+			<!-- spacing with label -->
+			<!-- <param-value>com.aris.learningvaadin.label.spacingwithlabel.LabelNonBreakingSpaceUI</param-value> -->
+			<!-- <param-value>com.aris.learningvaadin.label.spacingwithlabel.LabelPreformattedTextSpaceUI</param-value> -->
+			<!-- <param-value>com.aris.learningvaadin.label.spacingwithlabel.LabelAdjustableSpacingUI</param-value> -->
+			<!-- <param-value>com.aris.learningvaadin.label.spacingwithlabel.LabelExpandingSpacerUI</param-value> -->
+			
+			<!-- label style -->
+			<!-- <param-value>com.aris.learningvaadin.label.LabelBasicStyleUI</param-value> -->
+			<!-- <param-value>com.aris.learningvaadin.label.LabelPredefinedStyleUI</param-value> -->
+			<!-- <param-value>com.aris.learningvaadin.label.LabelSwitchButtonUI</param-value> -->
+			
+			<!-- navigator -->
+			<!-- <param-value>com.aris.learningvaadin.navigator.NavigatorUI</param-value> -->
+			<!-- <param-value>com.aris.learningvaadin.navigator.ViewUI</param-value> -->
+			<!-- <param-value>com.aris.learningvaadin.navigator.ViewProviderUI</param-value> -->
+			
+			<!-- embedding vaadin -->
+			<!-- <param-value>com.aris.learningvaadin.embeddingvaadin.NormalEmbeddingUI</param-value> -->
+			
+			<!-- custom components -->
+			<!-- <param-value>com.aris.learningvaadin.customwidgets.componentscomposition.CustomComponentUI</param-value> -->
+			
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>My First Vaadin Application</servlet-name>
+		<url-pattern>/*</url-pattern>
+	</servlet-mapping>
+	<!-- <servlet-mapping>
+		<servlet-name>My First Vaadin Application</servlet-name>
+		<url-pattern>/app/*</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>My First Vaadin Application</servlet-name>
+		<url-pattern>/VAADIN/*</url-pattern>
+	</servlet-mapping> -->
+	<!-- <context-param>
+		<description>Vaadin production mode</description>
+		<param-name>productionMode</param-name>
+		<param-value>false</param-value>
+	</context-param> -->
+
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
