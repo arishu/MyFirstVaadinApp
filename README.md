@@ -1,2 +1,2 @@
 # MyFirstVaadinApp
-Vaadin is one of the best web project in North Europe 
+Vaadin is one of the best web projects in North Europe 
